@@ -155,3 +155,18 @@ VALUES
 	(11, 9),
 	(12, 11),
 	(13, 6);
+
+UPDATE album 
+SET year_of_release = 2019
+WHERE album_id = 10;
+	
+UPDATE album 
+SET year_of_release = 2020
+WHERE album_id IN (6, 8);
+
+UPDATE track 
+SET duration = '00:02:20'
+WHERE track_id IN (18, 24);
+
+DELETE FROM collection_track 
+WHERE track_id IN (16, 21);
